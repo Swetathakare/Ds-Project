@@ -13,7 +13,9 @@ import java.util.concurrent.CountDownLatch;
 	static CountDownLatch latch = new CountDownLatch(1);
 	JFrame frame;
     Explore() {
+    	exp = 0;
         new JFrame();
+        latch = new CountDownLatch(1);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	    Toolkit toolkit = Toolkit.getDefaultToolkit();
 	    Dimension screenResolution = new Dimension(toolkit.getScreenSize());
